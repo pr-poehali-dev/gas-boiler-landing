@@ -187,19 +187,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="bg-emergency-red/10 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
-                  <Icon name="ShieldCheck" className="text-emergency-red" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold font-roboto mb-2">
-                    Страхование ответственности
-                  </h3>
-                  <p className="text-gray-600">
-                    Полная страховая защита на сумму до 5 млн рублей при выполнении работ
-                  </p>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
