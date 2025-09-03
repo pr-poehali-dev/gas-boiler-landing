@@ -20,6 +20,7 @@ export default function Index() {
             <Button 
               size="lg" 
               className="bg-emergency-red hover:bg-red-700 text-white px-8 py-4 text-lg font-medium"
+              onClick={() => window.open('tel:+79962401637', '_self')}
             >
               <Icon name="Phone" className="mr-2" size={20} />
               Вызвать мастера
