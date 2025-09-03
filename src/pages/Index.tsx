@@ -53,8 +53,8 @@ export default function Index() {
               <div className="bg-white/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                 <Icon name="Users" size={32} />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Опыт</h3>
-              <p className="opacity-90">Более 10 лет работы</p>
+              <h3 className="text-xl font-semibold mb-2">Качество</h3>
+              <p className="opacity-90">100% решенных задач</p>
             </div>
           </div>
         </div>
