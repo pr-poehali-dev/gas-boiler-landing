@@ -76,40 +76,34 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Ремонт котлов",
-                description: "Диагностика и устранение неисправностей любой сложности",
-                price: "от 2 500 ₽",
-                icon: "Wrench"
+                title: "Выезд/Диагностика",
+                description: "Определение причины неисправности на дому",
+                price: "1 500 ₽",
+                icon: "Search"
               },
               {
-                title: "Техобслуживание",
+                title: "Техническое обслуживание",
                 description: "Плановое обслуживание для безопасной работы",
-                price: "от 3 000 ₽",
+                price: "от 2 000 ₽",
                 icon: "Settings"
               },
               {
-                title: "Установка котлов",
-                description: "Монтаж и подключение нового оборудования",
-                price: "от 15 000 ₽",
-                icon: "Home"
-              },
-              {
-                title: "Чистка системы",
-                description: "Промывка теплообменника и системы отопления",
-                price: "от 4 500 ₽",
+                title: "Промывка теплообменника",
+                description: "Очистка системы от накипи и загрязнений",
+                price: "от 2 000 ₽",
                 icon: "Droplets"
               },
               {
-                title: "Замена запчастей",
-                description: "Оригинальные детали с гарантией качества",
-                price: "от 1 500 ₽",
-                icon: "Cog"
+                title: "Ремонт платы управления",
+                description: "Диагностика и ремонт электронного блока",
+                price: "от 3 500 ₽",
+                icon: "Cpu"
               },
               {
-                title: "Экстренный вызов",
-                description: "Аварийные работы в любое время суток",
-                price: "от 4 000 ₽",
-                icon: "Zap"
+                title: "Замена запчастей",
+                description: "Установка оригинальных комплектующих",
+                price: "2 000 ₽",
+                icon: "Cog"
               }
             ].map((service, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
@@ -127,8 +121,12 @@ export default function Index() {
                     {service.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <Button className="w-full bg-professional-blue hover:bg-blue-700">
+                <CardContent className="space-y-3">
+                  <Button 
+                    className="w-full bg-professional-blue hover:bg-blue-700"
+                    onClick={() => window.open('tel:+79962401637', '_self')}
+                  >
+                    <Icon name="Phone" className="mr-2" size={16} />
                     Заказать услугу
                   </Button>
                 </CardContent>
